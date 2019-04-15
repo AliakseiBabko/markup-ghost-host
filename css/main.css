@@ -1,0 +1,183 @@
+/* ------------------- fonts --------------------------- */
+@font-face {
+	font-family: "LatoRegular";
+	src: url("../fonts/Lato-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "LatoLight";
+	src: url("../fonts/Lato-Light.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "LatoBold";
+	src: url("../fonts/Lato-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "LatoSemibold";
+	src: url("../fonts/Lato-Semibold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "LatoHeavy";
+	src: url("../fonts/Lato-Heavy.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "MyriadProBold";
+	src: url("../fonts/MyriadPro-Bold.otf") format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "GeorgiaItalic";
+	src: url("../fonts/Georgia-Italic.ttf") format("truetype");
+	font-weight: italic;
+	font-style: normal;
+}
+@font-face {
+	font-family: "MontserratUltraLight";
+	src: url("../fonts/Montserrat-UltraLight.otf") format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+/* ------------------- global styles --------------------------- */
+*{	
+	box-sizing:border-box;
+}
+body {
+	margin: 0;
+	padding: 0;	
+}
+.wrapperBody {
+	width: 1600px;
+	min-height: 100vh;
+	margin: 0 auto;
+	background-image: url("../img/HeaderBG.jpg");
+	background-repeat: no-repeat;
+	-webkit-font-smoothing: antialiased;
+}
+a {
+	font: 15px "LatoRegular";
+	text-decoration: none;
+    outline: none;
+    color: white;
+}
+article {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/* -------------------header style--------------------------- */
+header {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	height: 90px;
+	width: 1195px;
+	margin: 0 auto;
+	user-select: none;
+}
+.logo {
+	width: 133px;	
+	line-height: 90px;
+	background-image: url("../img/Logo.png");
+	background-repeat: no-repeat;
+	margin-top: 30px;
+}
+nav {
+	display: flex;
+	height: 90px;
+	width: 630px;
+	align-items: center;
+	justify-content: space-between;	
+}
+nav a {
+	line-height: 90px;
+}
+nav a:hover {
+	border-bottom: 1px solid white;
+}
+.title {	
+	top: 89px;
+	height: 750px;
+	padding-top: 330px;
+	left: 622px;
+	position: absolute;
+	font: 32px "GeorgiaItalic";
+	color: white;
+	text-align: center;
+}
+.title span {
+	font: 75px "MyriadProBold";
+}
+/* ------------------- member style--------------------------- */
+.member {
+	margin-top: 870px;
+	width: 1600px;
+	min-height: 120px;
+	background: linear-gradient(100deg, #21424a calc(50% - 1px), #2fac6c 50%);
+	user-select: none;
+}
+.member a{
+	margin-left: 490px;
+	text-transform: uppercase;
+	font: 20px "LatoSemibold";
+	line-height: 120px;
+}
+/* ------------------- domain style--------------------------- */
+.domain {
+	height: 575px;
+	padding: 90px;
+	text-align: center;
+	font: 13px "MontserratUltraLight";
+}
+.domain span {
+	font: 20px "LatoHeavy";
+}
+table {
+	position: relative;
+	border-collapse: collapse;
+	width: 56%;
+	height: 190px;
+	margin: 20px auto;
+}
+table, td {	
+	border: 1px solid lightgrey;
+}
+td {
+	text-align: center;
+	width: 25%;
+	height: 50%;
+}
+/*td::before {
+	content: '';
+	position: absolute;
+	width: 80%;
+	border-bottom: 1px solid red;
+}*/
+td::after {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 20px;
+	width: 10px;
+	border-right: 1px solid red;
+}
+tr {	
+	color: grey;
+}
+tr:hover {
+	color: black;
+}
+/* ------------------- packages style--------------------------- */
+.packages {
+	height: 760px;
+	background-image: url("../img/PackagesBG.jpg");
+	background-repeat: no-repeat;
+}
